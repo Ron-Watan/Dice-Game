@@ -1,0 +1,93 @@
+.dice-game {
+  width: 100rem;
+  height: 60rem;
+
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.5fr;
+  border-radius: 2rem;
+  background-color: rgba(250, 235, 215, 0.082);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  border: 0.5px rgba(255, 255, 255, 0.146) solid;
+
+  justify-content: center;
+  justify-items: center;
+}
+
+.player-1 {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.display-dice {
+  width: 100%;
+  display: grid;
+  background: linear-gradient(to right, (#b6eaff84, #7aacc2, #6fe8fa, #79abbf, #b6eaff7e));
+  box-shadow: 0 0 4rem 4rem #abe6ef7a;
+  z-index: 30;
+}
+
+@keyframes flick {
+  0% {
+    background: linear-gradient(to right, (#ffd4b684, #c27a7a, #ffd4b684));
+    box-shadow: 0 0 4rem 4rem #ffffff7a;
+  }
+  50% {
+    background: linear-gradient(to right, (#b6eeff84, #7ab5c2, #b6fff884));
+    box-shadow: 0 0 4rem 4rem #ffffff7a;
+  }
+  100% {
+    background: linear-gradient(to right, (#ffd4b684, #c27a7a, #ffd4b684));
+    box-shadow: 0 0 4rem 4rem #ffffff7a;
+  }
+}
+.flick {
+  animation: flick 0.2s 6;
+}
+
+.player-2 {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.overlayBG {
+  position: absolute;
+  width: 38%;
+  height: 100%;
+  background: radial-gradient(circle at center, #00000095 15%, transparent);
+
+  z-index: 2;
+  &__1 {
+    top: 0%;
+    left: 0%;
+  }
+  &__2 {
+    top: 0%;
+    right: 0%;
+  }
+}
+
+.overlayBtn {
+  position: absolute;
+  width: 25%;
+  height: 50%;
+  // background-color: rgba(0, 255, 255, 0.209);
+  z-index: 20;
+
+  &__1 {
+    top: 50%;
+    left: 6%;
+  }
+  &__2 {
+    top: 50%;
+    right: 6%;
+  }
+}
+
+.hiddenBlock {
+  display: none;
+}

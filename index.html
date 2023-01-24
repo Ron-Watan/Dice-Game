@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/styleDice.css" rel="stylesheet" />
+
+    <script src="js/script.js" defer></script>
+
+    <title>Dice Game!</title>
+  </head>
+  <body>
+    <section class="dice-game">
+      <div class="player-1">
+        <div class="overlayBG overlayBG__1 hiddenBlock" id="overlayBg_1"></div>
+        <h1 class="heading-player">Player 1</h1>
+        <div class="label-score">Score</div>
+        <div class="score" id="score_1">&nbsp;</div>
+        <div class="correct" id="correct_1">nbsp</div>
+        <div class="overlayBtn overlayBtn__1 hiddenBlock" id="overlayBtn_1"></div>
+        <button class="btn-correct" id="btnCorrect_1">Collect</button>
+        <button class="btn-roll" id="btnRoll_1">Roll</button>
+      </div>
+      <section class="display-dice">
+        <button class="btn-finish" id="btnStartReset">Reset</button>
+
+        <figure>
+          <div class="dice1">
+            <ol class="die-list even-roll" data-roll="1" id="die-1">
+              <li class="die-item" data-side="1">
+                <span class="dot"></span>
+              </li>
+              <li class="die-item" data-side="2">
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </li>
+              <li class="die-item" data-side="3">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </li>
+              <li class="die-item" data-side="4">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </li>
+              <li class="die-item" data-side="5">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </li>
+              <li class="die-item" data-side="6">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </li>
+            </ol>
+          </div>
+        </figure>
+      </section>
+
+      <div class="player-2">
+        <div class="overlayBG overlayBG__2" id="overlayBg_2"></div>
+        <h1 class="heading-player">Player 2</h1>
+        <div class="label-score">Score</div>
+        <div class="score" id="score_2">9999</div>
+        <div class="correct" id="correct_2">99</div>
+        <div class="overlayBtn overlayBtn__2" id="overlayBtn_2"></div>
+        <button class="btn-correct grey" id="btnCorrect_2">Collect</button>
+        <button class="btn-roll grey" id="btnRoll_2">Roll</button>
+      </div>
+    </section>
+  </body>
+</html>
